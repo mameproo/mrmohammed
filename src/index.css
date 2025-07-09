@@ -1,0 +1,174 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Futuristic Tech Portfolio Design System */
+
+@layer base {
+  :root {
+    /* Light Mode - Clean & Modern */
+    --background: 0 0% 100%;
+    --foreground: 222 84% 4.9%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 222 84% 4.9%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 84% 4.9%;
+    
+    /* Electric Blue Primary */
+    --primary: 199 89% 48%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 199 89% 65%;
+    
+    /* Lime Accent */
+    --secondary: 83 80% 44%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-glow: 83 80% 60%;
+    
+    /* Neon Purple */
+    --accent: 262 83% 58%;
+    --accent-foreground: 0 0% 100%;
+    --accent-glow: 262 83% 70%;
+    
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 199 89% 48%;
+    
+    --radius: 0.75rem;
+    
+    /* Glassmorphism */
+    --glass-bg: 0 0% 100% / 0.1;
+    --glass-border: 0 0% 100% / 0.2;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(199 89% 48%), hsl(262 83% 58%));
+    --gradient-accent: linear-gradient(135deg, hsl(83 80% 44%), hsl(199 89% 48%));
+    --gradient-bg: linear-gradient(135deg, hsl(0 0% 100%), hsl(210 40% 98%));
+    
+    /* Animations */
+    --animate-glow: 0 0 20px hsl(var(--primary-glow) / 0.5);
+    --animate-pulse: 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  .dark {
+    /* Dark Mode - Cyberpunk Aesthetic */
+    --background: 222 84% 4.9%;
+    --foreground: 210 40% 98%;
+    
+    --card: 222 84% 4.9% / 0.5;
+    --card-foreground: 210 40% 98%;
+    
+    --popover: 222 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    
+    /* Enhanced Primary in Dark */
+    --primary: 199 89% 58%;
+    --primary-foreground: 222 84% 4.9%;
+    --primary-glow: 199 89% 70%;
+    
+    /* Enhanced Lime in Dark */
+    --secondary: 83 80% 54%;
+    --secondary-foreground: 222 84% 4.9%;
+    --secondary-glow: 83 80% 65%;
+    
+    /* Enhanced Purple in Dark */
+    --accent: 262 83% 68%;
+    --accent-foreground: 222 84% 4.9%;
+    --accent-glow: 262 83% 80%;
+    
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 199 89% 58%;
+    
+    /* Dark Glassmorphism */
+    --glass-bg: 0 0% 0% / 0.3;
+    --glass-border: 0 0% 100% / 0.1;
+    
+    /* Dark Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(199 89% 58%), hsl(262 83% 68%));
+    --gradient-accent: linear-gradient(135deg, hsl(83 80% 54%), hsl(199 89% 58%));
+    --gradient-bg: linear-gradient(135deg, hsl(222 84% 4.9%), hsl(217.2 32.6% 17.5%));
+    
+    /* Enhanced Glows for Dark Mode */
+    --animate-glow: 0 0 30px hsl(var(--primary-glow) / 0.6);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Glassmorphism Card */
+  .glass-card {
+    @apply bg-white/10 backdrop-blur-md border border-white/20 rounded-xl;
+  }
+  
+  .dark .glass-card {
+    @apply bg-black/30 border-white/10;
+  }
+  
+  /* Gradient Text */
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent;
+  }
+  
+  /* Glow Effect */
+  .glow {
+    box-shadow: var(--animate-glow);
+  }
+  
+  /* Particle Animation */
+  .particle {
+    @apply absolute w-1 h-1 bg-primary/30 rounded-full animate-pulse;
+  }
+  
+  /* Hero Button Variants */
+  .btn-hero {
+    @apply relative overflow-hidden px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg;
+  }
+  
+  .btn-primary {
+    @apply bg-gradient-to-r from-primary to-accent text-primary-foreground hover:glow;
+  }
+  
+  .btn-secondary {
+    @apply bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground;
+  }
+  
+  /* Animated Underline */
+  .animated-underline {
+    @apply relative;
+  }
+  
+  .animated-underline::after {
+    @apply content-[''] absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300;
+  }
+  
+  .animated-underline:hover::after {
+    @apply w-full;
+  }
+}
