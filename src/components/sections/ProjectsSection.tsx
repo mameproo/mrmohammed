@@ -34,7 +34,7 @@ export const ProjectsSection = () => {
       technologies: ['React', 'TypeScript', 'Tailwind'],
       category: 'Frontend',
       github: 'https://github.com/mameproo',
-      live: 'https://tena369.netlify.app',
+      live: 'https://tena360.netlify.app',
     },
     {
       id: 3,
