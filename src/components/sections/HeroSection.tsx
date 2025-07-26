@@ -3,7 +3,7 @@ import { Download, ArrowDown } from 'lucide-react';
 import { Button } from '../ui/button';
 import { TypewriterEffect } from '../TypewriterEffect';
 import heroImage from '../../assets/hero-bg.jpg';
-import profileImage from '../../assets/profile.png';
+import profileImage from '../../assets/profile (1).png';
 
 export const HeroSection = () => {
   const scrollToContact = () => {
