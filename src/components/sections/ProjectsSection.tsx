@@ -61,7 +61,6 @@ export const ProjectsSection = () => {
           src: 'https://www.behance.net/embed/project/234708667?ilo0=1',
           live: 'https://www.behance.net/gallery/234708667',
         },
-        {
       ],
     },
   ];
@@ -155,14 +154,15 @@ export const ProjectsSection = () => {
                     </p>
 
                     <div className="flex flex-wrap gap-2 mb-4">
-                      {project.technologies.map((tech) => (
-                        <span
-                          key={tech}
-                          className="px-2 py-1 text-xs bg-primary/10 text-primary rounded-full"
-                        >
-                          {tech}
-                        </span>
-                      ))}
+                      {project.technologies &&
+                        project.technologies.map((tech) => (
+                          <span
+                            key={tech}
+                            className="px-2 py-1 text-xs bg-primary/10 text-primary rounded-full"
+                          >
+                            {tech}
+                          </span>
+                        ))}
                     </div>
 
                     <div className="flex gap-3">
@@ -221,38 +221,39 @@ export const ProjectsSection = () => {
                   </p>
 
                   <div className="flex flex-col gap-6">
-                    {project.iframeProjects.map((iframe) => (
-                      <div key={iframe.id} className="w-full">
-                        <iframe
-                          src={iframe.src}
-                          height="260"
-                          width="100%"
-                          frameBorder="0"
-                          allowFullScreen
-                          loading="lazy"
-                          allow="clipboard-write"
-                          referrerPolicy="strict-origin-when-cross-origin"
-                          className="w-full rounded-lg shadow"
-                          title={iframe.id}
-                        ></iframe>
+                    {project.iframeProjects &&
+                      project.iframeProjects.map((iframe) => (
+                        <div key={iframe.id} className="w-full">
+                          <iframe
+                            src={iframe.src}
+                            height="260"
+                            width="100%"
+                            frameBorder="0"
+                            allowFullScreen
+                            loading="lazy"
+                            allow="clipboard-write"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            className="w-full rounded-lg shadow"
+                            title={iframe.id}
+                          ></iframe>
 
-                        <div className="mt-2">
-                          <a
-                            href={iframe.live}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <Button
-                              size="sm"
-                              className="bg-gradient-primary hover:glow w-full"
+                          <div className="mt-2">
+                            <a
+                              href={iframe.live}
+                              target="_blank"
+                              rel="noopener noreferrer"
                             >
-                              <ExternalLink className="mr-2 h-4 w-4" />
-                              View on Behance
-                            </Button>
-                          </a>
+                              <Button
+                                size="sm"
+                                className="bg-gradient-primary hover:glow w-full"
+                              >
+                                <ExternalLink className="mr-2 h-4 w-4" />
+                                View on Behance
+                              </Button>
+                            </a>
+                          </div>
                         </div>
-                      </div>
-                    ))}
+                      ))}
                   </div>
                 </div>
               )}
