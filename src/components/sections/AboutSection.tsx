@@ -20,47 +20,52 @@ export const AboutSection = () => {
   const skills = [
     { icon: Code2, name: 'Web Development', description: 'React, TypeScript, Next.js, HTML, CSS, JavaScript' },
     { icon: Shield, name: 'Security Analyst', description: 'Vulnerability Assessment, Security Testing' },
-    { icon: Globe, name: 'Blogger', description: 'Technical Writing, Content Creation' },
+    { icon: Palette, name: 'Graphics Designer', description: 'Photoshop, Illustrator, Canva, Creative Design' },
     { icon: Zap, name: 'PlayStation Modding', description: 'Custom Firmware, Game Installation' },
     { icon: Smartphone, name: 'Mobile Software Maintenance', description: 'FRP, Flashing, Unlocking' },
     { icon: Database, name: 'Linux & Windows System Operations', description: 'Windows, Linux, System Internals' },
     { icon: GitBranch, name: 'Version Control', description: 'Git, GitHub, GitLab' },
     { icon: Zap, name: 'AI Collaboration', description: 'Collaborating with AI to solve problems and build cool things' },
   ];
-const experience = [
-  {
-    year: '2023 - Present',
-    title: 'Full Stack Web Developer ',
-    company: 'Self-Employed',
-    description: 'Building dynamic and responsive web applications for clients using React.js and PHP. Focused on creating user-friendly interfaces, admin dashboards, blog systems, and custom CMS solutions.'
-  },
-   {
-    year: '2023 - Present',
-    title: 'System Maintenance & Customization',
-    company: 'Independent',
-    description: 'Performed PlayStation 4 system maintenance and safe game installations. Explored firmware customization techniques for offline and educational use.'
-  },
-   
-  {
-    year: '2022 - 2023',
-    title: 'Frontend Developer ',
-    company: 'Various Clients',
-    description: 'Developed modern frontend interfaces using React.js. Delivered clean UI components and optimized websites for speed and mobile performance.'
-  },
-   {
-    year: '2021 - 2022',
-    title: 'Cybersecurity Learner',
-    company: 'Self-Study with Kali Linux',
-    description: 'Practicing basic web security testing using Kali Linux tools such as Nmap, Nikto, and Burp Suite. Focused on ethical hacking, vulnerability scanning, and safe local environment testing.'
-  },
-  {
-    year: '2021 - 2022',
-    title: 'Web Developer Intern',
-    company: 'Personal Projects & Practice',
-    description: 'Gained hands-on experience by building portfolio websites, learning PHP and MySQL integration, and practicing frontend/backend workflows.'
-  }, 
-];
 
+  const experience = [
+    {
+      year: '2024 - Present',
+      title: 'Graphics Designer',
+      company: 'Freelance',
+      description: 'Creating digital graphics, social media content, and branding designs using Photoshop, Illustrator, and Canva for clients.'
+    },
+    {
+      year: '2023 - Present',
+      title: 'Full Stack Web Developer ',
+      company: 'Self-Employed',
+      description: 'Building dynamic and responsive web applications for clients using React.js and PHP. Focused on creating user-friendly interfaces, admin dashboards, blog systems, and custom CMS solutions.'
+    },
+    {
+      year: '2023 - Present',
+      title: 'System Maintenance & Customization',
+      company: 'Independent',
+      description: 'Performed PlayStation 4 system maintenance and safe game installations. Explored firmware customization techniques for offline and educational use.'
+    },
+    {
+      year: '2022 - 2023',
+      title: 'Frontend Developer ',
+      company: 'Various Clients',
+      description: 'Developed modern frontend interfaces using React.js. Delivered clean UI components and optimized websites for speed and mobile performance.'
+    },
+    {
+      year: '2021 - 2022',
+      title: 'Cybersecurity Learner',
+      company: 'Self-Study with Kali Linux',
+      description: 'Practicing basic web security testing using Kali Linux tools such as Nmap, Nikto, and Burp Suite. Focused on ethical hacking, vulnerability scanning, and safe local environment testing.'
+    },
+    {
+      year: '2021 - 2022',
+      title: 'Web Developer Intern',
+      company: 'Personal Projects & Practice',
+      description: 'Gained hands-on experience by building portfolio websites, learning PHP and MySQL integration, and practicing frontend/backend workflows.'
+    }, 
+  ];
 
   return (
     <section id="about" className="py-20 bg-gradient-bg">
