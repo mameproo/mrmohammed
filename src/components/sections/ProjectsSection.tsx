@@ -62,11 +62,6 @@ export const ProjectsSection = () => {
           live: 'https://www.behance.net/gallery/234708667',
         },
         {
-          id: 'b2',
-          src: 'https://www.behance.net/embed/project/123456789?ilo0=1',
-          live: 'https://www.behance.net/gallery/123456789',
-        },
-        // 👉 Add more Behance iframe projects here
       ],
     },
   ];
