@@ -59,13 +59,13 @@ export const ProjectsSection = () => {
         {
           id: 'b1',
           src: 'https://www.behance.net/embed/project/234708667?ilo0=1',
-          live: 'https://www.behance.net/gallery/234708667',
+          live: 'https://www.behance.net/mamepro',
         },
       ],
     },
   ];
 
-  const categories = ['All', 'Full Stack', 'Frontend', 'Others'];
+  const categories = ['All', 'Full Stack', 'Frontend', 'Graphics'];
 
   const filteredProjects =
     filter === 'All'
