@@ -248,7 +248,7 @@ export const ProjectsSection = () => {
                                 className="bg-gradient-primary hover:glow w-full"
                               >
                                 <ExternalLink className="mr-2 h-4 w-4" />
-                                View on Behance
+                                Check Behance
                               </Button>
                             </a>
                           </div>
