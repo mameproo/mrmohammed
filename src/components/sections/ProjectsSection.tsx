@@ -53,7 +53,7 @@ export const ProjectsSection = () => {
       id: 4,
       title: 'Graphic Design Samples',
       description: 'Behance showcase projects with creative design samples.',
-      category: 'Others',
+      category: 'Graphics',
       type: 'iframe',
       iframeProjects: [
         {
