@@ -19,10 +19,8 @@ export const AboutSection = () => {
 
   const skills = [
     { icon: Code2, name: 'Web Development', description: 'React, TypeScript, Next.js, HTML, CSS, JavaScript' },
-    { icon: Shield, name: 'Security Analyst', description: 'Vulnerability Assessment, Security Testing' },
+    { icon: Shield, name: 'Web Security Analyst', description: 'Vulnerability Assessment, Security Testing' },
     { icon: Palette, name: 'Graphics Designer', description: 'Photoshop, Illustrator, Canva, Creative Design' },
-    { icon: Zap, name: 'PlayStation Modding', description: 'Custom Firmware, Game Installation' },
-    { icon: Smartphone, name: 'Mobile Software Maintenance', description: 'FRP, Flashing, Unlocking' },
     { icon: Database, name: 'Linux & Windows System Operations', description: 'Windows, Linux, System Internals' },
     { icon: GitBranch, name: 'Version Control', description: 'Git, GitHub, GitLab' },
     { icon: Zap, name: 'AI Collaboration', description: 'Collaborating with AI to solve problems and build cool things' },
@@ -38,14 +36,8 @@ export const AboutSection = () => {
     {
       year: '2023 - Present',
       title: 'Full Stack Web Developer ',
-      company: 'Self-Employed',
+      company: 'Remote',
       description: 'Building dynamic and responsive web applications for clients using React.js and PHP. Focused on creating user-friendly interfaces, admin dashboards, blog systems, and custom CMS solutions.'
-    },
-    {
-      year: '2023 - Present',
-      title: 'System Maintenance & Customization',
-      company: 'Independent',
-      description: 'Performed PlayStation 4 system maintenance and safe game installations. Explored firmware customization techniques for offline and educational use.'
     },
     {
       year: '2022 - 2023',
@@ -81,7 +73,7 @@ export const AboutSection = () => {
             About Me
           </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            I'm a full-stack developer eager to learn and grow. I enjoy building digital experiences and solving problems with code.
+            I'm a Grphics designer & full-stack developer eager to learn and grow.
             </p>
         </motion.div>
 
